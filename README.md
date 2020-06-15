@@ -13,6 +13,7 @@ I. File List
 Note that all files have to be in the same directory.
 
 II. Usage
+
 The program takes five command line arguments:
 	- rows
 	- columns
