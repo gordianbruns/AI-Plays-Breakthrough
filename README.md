@@ -10,10 +10,9 @@ I. File List
  - main.py  # contains main, initial_state, transition _function, move_generator, create_tree, minimax, play_game
  - node.py  # contains Node-class for the tree, evasive, conqueror, balanced, distance, rusher, calculate_utility
 
-Note that all files have to be in the same directory.
+Note that all files must be in the same directory.
 
 II. Usage
-
 The program takes five command line arguments:
 	- rows
 	- columns
