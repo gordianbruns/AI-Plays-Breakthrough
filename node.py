@@ -38,21 +38,21 @@ class Node:
     def set_utility(self, utility):
         self.utility_estimate = utility
 
-    def evasive(self):
+    def evasive(self):  # strategy1
         if self.state.get_turn() == 0:
             utility = len(self.state.get_black_pawns()) + random.uniform(0, 1)
         else:
             utility = len(self.state.get_white_pawns()) + random.uniform(0, 1)
         return utility
 
-    def conqueror(self):
+    def conqueror(self):    # strategy2
         if self.state.get_turn() == 0:
             utility = (0 - len(self.state.get_white_pawns())) + random.uniform(0, 1)
         else:
             utility = (0 - len(self.state.get_black_pawns())) + random.uniform(0, 1)
         return utility
 
-    def balanced(self):
+    def balanced(self): # strategy3
         if self.state.get_turn() == 0:
             utility = len(self.state.get_black_pawns()) - len(self.state.get_white_pawns()) + random.uniform(0, 1)
         else:
@@ -71,7 +71,7 @@ class Node:
                     distance = self.state.get_rows() - pawn[0] - 1
         return distance
 
-    def rusher(self):
+    def rusher(self):   # strategy4
         if self.state.get_turn() == 0:
             utility = len(self.state.get_black_pawns()) - len(self.state.get_white_pawns()) - self._distance() + \
                       random.uniform(0, 1)
@@ -140,4 +140,3 @@ class Node:
                     maximum2 = child
             self.utility_estimate = maximum2.utility_estimate  # maximum of depth 1 children
         return maximum2
-
