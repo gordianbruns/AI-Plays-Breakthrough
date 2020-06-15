@@ -19,11 +19,11 @@ II. Usage
 
 The program takes five command line arguments:
 
-	- rows
-	- columns
-	- rows_of_pawns
-	- utility function for the white pawns (possible options: evasive, conqueror, balanced, rusher)
-	- utility function for the black pawns (possible options: evasive, conqueror, balanced, rusher)
+  - rows
+  - columns
+  - rows_of_pawns
+  - utility function for the white pawns (possible options: evasive, conqueror, balanced, rusher)
+  - utility function for the black pawns (possible options: evasive, conqueror, balanced, rusher)
 
 It creates an initial state and based on that, it will play a whole game automatically.
 So, for example, if you want to let an AI with the utility function balanced play against an AI with the utility function evasive on an 8 x 8 board with two rows of pawns, then you have to enter the following into the command line:
