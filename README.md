@@ -1,7 +1,9 @@
 README
 --------------
 Gordian Bruns
+
 CS365
+
 Lab B - Adversarial Games
 --------------
 
