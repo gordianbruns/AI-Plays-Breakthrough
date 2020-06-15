@@ -12,8 +12,11 @@ I. File List
 
 Note that all files must be in the same directory.
 
+
 II. Usage
+
 The program takes five command line arguments:
+
 	- rows
 	- columns
 	- rows_of_pawns
